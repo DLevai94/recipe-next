@@ -7,7 +7,7 @@ export default function Register() {
           Name:
         </label>
         <input
-          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400"
+          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="name"
           name="name"
           type="text"
@@ -18,7 +18,7 @@ export default function Register() {
           Email:
         </label>
         <input
-          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400"
+          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="email"
           name="email"
           type="email"
@@ -29,7 +29,7 @@ export default function Register() {
           Password:
         </label>
         <input
-          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400"
+          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="password"
           name="password"
           type="password"
@@ -40,7 +40,7 @@ export default function Register() {
           Confirm Password:
         </label>
         <input
-          className="border border-gray-600 rounded-md px-3 py-4 mb-4 text-lg font-bold placeholder:text-gray-400"
+          className="border border-gray-600 rounded-md px-3 py-4 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="passwordAgain"
           name="passwordAgain"
           type="password"
@@ -48,7 +48,7 @@ export default function Register() {
           required
         />
         <button
-          className="px-3 py-4 border-2 rounded-md bg-lime-400 font-bold uppercase hover:bg-green-500 transition duration-500 hover:translate-x-1 hover:translate-y-1"
+          className="px-3 py-4 border-2 rounded-md bg-lime-400 font-bold uppercase hover:bg-green-500 transition duration-200 hover:translate-y-1"
           type="submit">
           Register
         </button>
