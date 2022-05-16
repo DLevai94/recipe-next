@@ -1,4 +1,6 @@
-import Head from 'next/head';
+import Head from 'next/head'
+import Image from 'next/image'
+import Muffins from '../public/Muffins.jpeg'
 
 export default function Home() {
   return (
@@ -12,7 +14,7 @@ export default function Home() {
         <div className="container mx-auto my-10 px-5 md:px-10">
           <div className="flex flex-col md:flex-row justify-center">
             <div className="w-full md:w-1/3">
-              <img id="food-image" src="/Muffins.jpeg" alt="Image of food" />
+              <Image id="food-image" src={Muffins} alt="Image of food" />
             </div>
             <div className="w-full md:w-2/3 md:px-10">
               <h2 id="title" className="my-5 md:mt-0 text-3xl font-bold">
@@ -70,5 +72,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  );
+  )
 }
