@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState } from 'react'
+import Link from 'next/link'
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   const handleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+    setIsMobileMenuOpen(!isMobileMenuOpen)
+  }
   return (
     <>
       <div className="border-b-2 border-blue-300">
@@ -33,7 +33,7 @@ const Navbar = () => {
               </li>
             </ul>
             <Link href="/login">
-              <button className="-mt-1 ml-3 px-5 py-1 border-2 border-lime-400 rounded-lg bg-lime-400 text-white hover:bg-green-500">
+              <button className="-mt-1 ml-3 px-5 py-1 border-2 border-lime-400 rounded-lg bg-lime-400 text-white hover:bg-green-500 transition duration-100">
                 Log in
               </button>
             </Link>
@@ -46,19 +46,19 @@ const Navbar = () => {
         </div>
       </div>
       <ul className={isMobileMenuOpen ? 'block' : 'hidden'}>
-        <li className="block w-full text-right border-b border-gray-600 bg-gray-100 hover:bg-opacity-75 transition duration-400">
-          <a href="#" className="block p-4 uppercase font-bold">
+        <li className="block w-full text-right border-b border-slate-400 hover:bg-slate-100 transition duration-400">
+          <a href="#" className="block p-4 text-xl">
             My recipes
           </a>
         </li>
-        <li className="block w-full text-right border-b border-gray-600 bg-gray-100 hover:bg-opacity-75 transition duration-400">
-          <a href="#" className="block p-4 uppercase font-bold">
+        <li className="block w-full text-right border-b-2 border-blue-300 hover:bg-slate-100 transition duration-400">
+          <a href="#" className="block p-4 text-xl">
             Log in
           </a>
         </li>
       </ul>
     </>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
