@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <>
       <div className="border-b-2 border-blue-300">
-        <div className="container mx-auto flex flex-row justify-between px-5 md:px-10 py-5 text-xl">
+        <div className="container mx-auto flex flex-row justify-between items-center px-5 md:px-10 py-5 text-xl">
           <h1 className="text-2xl">
             <Link href="/">Recipes :)</Link>
           </h1>
@@ -47,14 +47,14 @@ const Navbar = () => {
       </div>
       <ul className={isMobileMenuOpen ? 'block' : 'hidden'}>
         <li className="block w-full text-right border-b border-slate-400 hover:bg-slate-100 transition duration-400">
-          <a href="#" className="block p-4 text-xl">
-            My recipes
-          </a>
+          <a className="block p-4 text-xl">My recipes</a>
         </li>
         <li className="block w-full text-right border-b-2 border-blue-300 hover:bg-slate-100 transition duration-400">
-          <a href="#" className="block p-4 text-xl">
-            Log in
-          </a>
+          <Link href="/login">
+            <a href="#" className="block p-4 text-xl">
+              Log in
+            </a>
+          </Link>
         </li>
       </ul>
     </>
