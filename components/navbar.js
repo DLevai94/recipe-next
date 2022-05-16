@@ -33,7 +33,7 @@ const Navbar = () => {
               </li>
             </ul>
             <Link href="/login">
-              <button className="-mt-1 ml-3 px-5 py-1 border-2 border-lime-400 rounded-lg bg-lime-400 text-white hover:bg-green-500 transition duration-100">
+              <button className="-mt-1 ml-2 px-5 py-1 rounded-lg bg-lime-400 hover:bg-lime-500 font-semibold transition duration-100">
                 Log in
               </button>
             </Link>

@@ -37,7 +37,7 @@ const LogIn = () => {
           </label>
         </div>
         <button
-          className="px-3 py-5 border-2 rounded-md bg-lime-400 font-bold uppercase hover:bg-green-500 transition duration-200 hover:translate-y-1"
+          className="px-3 py-5 border-2 rounded-md bg-lime-400 font-bold uppercase hover:bg-lime-500 transition duration-200 hover:translate-y-1"
           type="submit">
           Log in
         </button>
