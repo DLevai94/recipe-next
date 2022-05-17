@@ -7,7 +7,7 @@ export default function Register() {
           Name:
         </label>
         <input
-          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
+          className="border border-gray-600 rounded-md px-3 py-4 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="name"
           name="name"
           type="text"
@@ -18,7 +18,7 @@ export default function Register() {
           Email:
         </label>
         <input
-          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
+          className="border border-gray-600 rounded-md px-3 py-4 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="email"
           name="email"
           type="email"
@@ -29,7 +29,7 @@ export default function Register() {
           Password:
         </label>
         <input
-          className="border border-gray-600 rounded-md py-5 px-3 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
+          className="border border-gray-600 rounded-md px-3 py-4 mb-4 text-lg font-bold placeholder:text-gray-400 focus:outline-none focus:ring-2 hover:ring-2"
           id="password"
           name="password"
           type="password"
