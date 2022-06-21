@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Muffins from '../../public/Muffins.jpeg'
 
-const RecipePage = ({ title, ingredients, description }) => {
+const RecipePage = ({ title, ingredients, description, method, prepTime, yields }) => {
   return (
     <section id="recipe">
       <div className="container mx-auto my-10 px-5 md:px-10">
@@ -15,10 +15,12 @@ const RecipePage = ({ title, ingredients, description }) => {
             </h2>
             <p>{description}</p>
             <p className="pt-3">
-              <span className="font-bold">Preparation Time: </span>45 min
+              <span className="font-bold">Preparation Time: </span>
+              {prepTime}
             </p>
             <p className="pt-3">
-              <span className="font-bold">Yields: </span>12 muffins
+              <span className="font-bold">Yields: </span>
+              {yields}
             </p>
           </div>
         </div>
@@ -34,20 +36,9 @@ const RecipePage = ({ title, ingredients, description }) => {
           <div className="w-full md:w-2/3 md:px-10">
             <h3 className="mt-5 md:mt-0 text-2xl">Method</h3>
             <ol className="mt-5 ml-5 list-decimal">
-              <li>
-                Position rack in the middle of oven. Preheat oven to 375 degrees F (190 degrees C). Spray the top of a
-                muffin pan with non-stick coating, and line with paper liners.
-              </li>
-              <li>
-                In a large bowl, cream together the butter, 1 1/4 cups sugar and salt until light and fluffy. Beat in
-                the eggs one at a time. Mix together 1 3/4 cup of the flour and baking powder. Beat in the flour mixture
-                alternately with the buttermilk, mixing just until incorporated. Crush 1/4 of the blueberries, and stir
-                into the batter. Mix the rest of the whole blueberries with the remaining 1/4 cup of the flour, and fold
-                into the batter. Scoop into muffin cups. Sprinkle tops lightly with sugar.
-              </li>
-              <li>
-                Bake in preheated oven for 30 minutes, or until golden brown, and tops spring back when lightly tapped.
-              </li>
+              {method.map((step, index) => (
+                <li key={index}>{step}</li>
+              ))}
             </ol>
           </div>
         </div>
@@ -72,8 +63,11 @@ export async function getStaticProps(context) {
   return {
     props: {
       title: data.title,
-      ingredients: data.ingredients,
       description: data.description,
+      prepTime: data.prepTime,
+      yields: data.yields,
+      ingredients: data.ingredients,
+      method: data.method,
     },
   }
 }
