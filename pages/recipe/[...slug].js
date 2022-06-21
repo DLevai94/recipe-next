@@ -1,13 +1,12 @@
 import Image from 'next/image'
-import Muffins from '../../public/Muffins.jpeg'
 
-const RecipePage = ({ title, ingredients, description, method, prepTime, yields }) => {
+const RecipePage = ({ title, img, ingredients, description, method, prepTime, yields }) => {
   return (
     <section id="recipe">
       <div className="container mx-auto my-10 px-5 md:px-10">
         <div className="flex flex-col md:flex-row justify-center">
           <div className="w-full md:w-1/3">
-            <Image id="food-image" src={Muffins} alt="Image of food" />
+            <Image id="food-image" height="500" width="500" src={img} alt="Image of food" />
           </div>
           <div className="w-full md:w-2/3 md:px-10">
             <h2 id="title" className="my-5 md:mt-0 text-3xl font-bold">
@@ -63,6 +62,7 @@ export async function getStaticProps(context) {
   return {
     props: {
       title: data.title,
+      img: data.img,
       description: data.description,
       prepTime: data.prepTime,
       yields: data.yields,

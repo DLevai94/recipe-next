@@ -1,3 +1,3 @@
-const recipes = [{ slug: 'blueberry-muffins' }, { slug: 'chocolate-muffins' }]
+const recipes = [{ slug: 'blueberry-muffins' }, { slug: 'chorizo-mozzarella-gnocchi-bake' }]
 
 module.exports = recipes
