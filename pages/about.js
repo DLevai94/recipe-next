@@ -1,3 +1,15 @@
-export default function About() {
-  return <div className="text-center">This is the about page. No clue what to put here</div>
+const About = ({ description }) => {
+  return <p className="text-center">{description}</p>
 }
+
+export async function getStaticProps(context) {
+  // fetch data from local json file
+  const data = require(`../data/about/about-content.json`)
+  return {
+    props: {
+      description: data.description,
+    },
+  }
+}
+
+export default About

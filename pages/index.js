@@ -9,7 +9,7 @@ export default function Home() {
       </Head>
       <div className="container mx-auto w-screen py-10 px-5 md:px-10 h-full flex flex-col justify-center">
         <h2 className="py-10 text-3xl font-semibold uppercase">
-          All the recipes you'll <br />
+          All the recipes you&apos;ll <br />
           ever need. <br />
           In one place
         </h2>
